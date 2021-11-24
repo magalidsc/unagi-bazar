@@ -1,8 +1,13 @@
 import React from "react";
 
+const styleGreeting = {
+    margin: '2rem',
+    fontSize: '60px'
+}
+
 const ItemListContainer = ({ greeting }) => {
     return (
-        <h1>{greeting}</h1>
+        <h1 style={styleGreeting}>{greeting}</h1>
     )
 }
 
