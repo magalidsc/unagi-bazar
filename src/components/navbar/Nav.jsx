@@ -1,4 +1,5 @@
 import React from 'react';
+import CartWidget from '../cart-widget/CartWidget.jsx'
 
 const Nav = () => {
     return (
@@ -31,6 +32,7 @@ const Nav = () => {
                     </ul>
                 </div>
             </div>
+            <CartWidget />
         </nav>
     )
 }
