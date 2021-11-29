@@ -1,4 +1,5 @@
 import React from "react";
+import ItemCount from "../ItemCount.jsx";
 
 const styleGreeting = {
     margin: '2rem',
@@ -7,7 +8,10 @@ const styleGreeting = {
 
 const ItemListContainer = ({ greeting }) => {
     return (
-        <h1 style={styleGreeting}>{greeting}</h1>
+        <div>
+            <h1 style={styleGreeting}>{greeting}</h1>
+            <ItemCount />
+        </div>
     )
 }
 

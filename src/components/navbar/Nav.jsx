@@ -23,10 +23,10 @@ const Nav = () => {
                             </ul>
                         </li>
                         <li className="nav-item" style={{ margin: 2 }}>
-                            <a className="nav-link active btn text-light" aria-current="page" href="/#">Cómo comprar</a>
+                            <a className="nav-link active btn" aria-current="page" href="/#">Cómo comprar</a>
                         </li>
                         <li className="nav-item" style={{ margin: 2 }}>
-                            <a className="nav-link active btn text-light" aria-current="page" href="/#">Contacto</a>
+                            <a className="nav-link active btn" aria-current="page" href="/#">Contacto</a>
                         </li>
 
                     </ul>
