@@ -1,25 +1,24 @@
 import React, { useState } from 'react'
+import "../components/itemCount.css"
 
 
+const ItemCount = ({ stock, initial }) => {
 
-const ItemCount = () => {
 
-    let stock = 10
-
-    const [count, setCounter] = useState(1)
+    const [count, setCounter] = useState(initial)
 
     const addProduct = () => {
         // Condicional para que solo se pueda sumar productos hasta llegar al límite del stock
         if (count < stock) {
             setCounter(count + 1);
         } else {
-            console.log("Se está exediendo el límite del stock")
+            console.log("Se está excediendo el límite del stock")
         }
     }
 
     const removeProduct = () => {
         // Restar una unidad por cada click. No puede restarse un número menor a 1
-        if (count > 1) {
+        if (count > 0) {
             setCounter(count - 1);
         } else {
             console.log("No se puede seleccionar menos de 1 producto")
@@ -27,11 +26,22 @@ const ItemCount = () => {
 
     }
 
+    const onAdd = () => {
+        if (count > 0) {
+            alert("Fueron agregados tus productos al carrito");
+        } else {
+            alert("Debes seleccionar al menos un producto")
+        }
+    }
+
     return (
-        <div>
-            <h3> {count} </h3>
-            <button onClick={removeProduct}> - </button>
-            <button onClick={addProduct}> + </button>
+        <div className="cardItem">
+            <h1>Nombre producto</h1>
+            <h5> Cantidad seleccionada: {count} </h5>
+            <button onClick={removeProduct} class="btn btn-secondary"> - </button>
+            <button onClick={addProduct} class="btn btn-secondary"> + </button>
+            <button onClick={onAdd} class="btn btn-outline-warning">Agregar al carrito</button>
+
         </div>
     )
 }
