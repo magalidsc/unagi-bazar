@@ -38,9 +38,9 @@ const ItemCount = ({ stock, initial }) => {
         <div className="cardItem">
             <h1>Nombre producto</h1>
             <h5> Cantidad seleccionada: {count} </h5>
-            <button onClick={removeProduct} class="btn btn-secondary"> - </button>
-            <button onClick={addProduct} class="btn btn-secondary"> + </button>
-            <button onClick={onAdd} class="btn btn-outline-warning">Agregar al carrito</button>
+            <button onClick={removeProduct} className="btn btn-secondary"> - </button>
+            <button onClick={addProduct} className="btn btn-secondary"> + </button>
+            <button onClick={onAdd} className="btn btn-outline-warning">Agregar al carrito</button>
 
         </div>
     )
