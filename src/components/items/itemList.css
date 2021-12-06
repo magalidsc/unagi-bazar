@@ -1,8 +1,8 @@
-.container-list {
+.containerItem {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     row-gap: 20px;
 }

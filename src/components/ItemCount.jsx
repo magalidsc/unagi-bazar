@@ -36,7 +36,6 @@ const ItemCount = ({ stock, initial }) => {
 
     return (
         <div className="cardItem">
-            <h1>Nombre producto</h1>
             <h5> Cantidad seleccionada: {count} </h5>
             <button onClick={removeProduct} className="btn btn-secondary"> - </button>
             <button onClick={addProduct} className="btn btn-secondary"> + </button>

@@ -1,12 +1,14 @@
 .cardItem {
-    box-shadow: 12px 10px 24px -5px rgba(0,0,0,0.75);
--webkit-box-shadow: 12px 10px 24px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 12px 10px 24px -5px rgba(0,0,0,0.75);
-margin: 30px;
+margin: 0px;
 width: 20rem;
-height: 200px;
+height: 220px;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+
+
+.btn {
+    margin: 1rem;
 }

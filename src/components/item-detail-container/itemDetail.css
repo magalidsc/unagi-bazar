@@ -1,18 +1,19 @@
-.img-bazar {
-    width: 10rem;
-    height: 10rem;
-}
-
-.myCards {
+.detail {
     box-shadow: 12px 10px 24px -5px rgba(0,0,0,0.75);
     -webkit-box-shadow: 12px 10px 24px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 12px 10px 24px -5px rgba(0,0,0,0.75);
-    margin: 20px;
-    margin-left: 5rem;
-    width: 20rem;
-    height: 500px;
+    margin-left: 10rem;
+    width: 70rem;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.image-detail {
+    margin-top: 5rem;
+    width: 18rem;
+    height: 18rem;
 }
