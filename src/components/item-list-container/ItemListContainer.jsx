@@ -3,23 +3,33 @@ import { useEffect } from "react"
 import ItemList from "../items/ItemList"
 import "./style.css";
 import { getProductsAvailable } from "../../products";
+import { useParams } from "react-router-dom";
 
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
+
+    const { categoryId } = useParams()
     const [productsAvailable, setProductsAvailable] = useState([])
+
     useEffect(() => {
-        const list = getProductsAvailable()
-        list.then(list => {
-            setProductsAvailable(list)
-        })
-        return (() => {
-            setProductsAvailable([])
-        })
-    }, [])
+
+        (async () => {
+            // Si la categoría está definada, traer los producto por el id de la categoría, sino traer todos los productos
+            if (categoryId !== undefined) {
+                const productsAvailable = await getProductsAvailable(categoryId);
+                setProductsAvailable(productsAvailable);
+
+            } else {
+                const productsAvailable = await getProductsAvailable();
+                setProductsAvailable(productsAvailable);
+
+            }
+        })()
+    }, [categoryId])
 
     return (
         <div className="container-list container-lg">
-            <h1>{greeting}</h1>
+
             <ItemList productsAvailable={productsAvailable} />
         </div>
     )

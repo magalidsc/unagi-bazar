@@ -1,7 +1,7 @@
 import React from "react";
 import "./Item.css";
 import ItemCount from "../ItemCount";
-
+import { Link } from "react-router-dom"
 
 
 const Item = ({ eachProduct }) => {
@@ -12,7 +12,7 @@ const Item = ({ eachProduct }) => {
             <img className="img-bazar" src={eachProduct.img} alt="img-productos" />
             <h3>{eachProduct.name}</h3>
             <ItemCount stock={eachProduct.stockProd} initial={1} />
-            <button className="btn btn-warning">Ver detalle</button>
+            <Link className="btn btn-warning" to={`/item/${eachProduct.id}`}>Ver detalle</Link>
 
         </div>
     )

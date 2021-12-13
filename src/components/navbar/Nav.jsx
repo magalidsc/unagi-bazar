@@ -1,5 +1,6 @@
 import React from 'react';
 import CartWidget from '../cart-widget/CartWidget.jsx'
+import { Link } from "react-router-dom";
 
 const Nav = () => {
     return (
@@ -16,10 +17,16 @@ const Nav = () => {
                                 Productos
           </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a className="nav-link dropdown-item text-secondary" href="/#">Cocina</a></li>
-                                <li><a className="nav-link dropdown-item text-secondary" href="/#">Baño</a></li>
-                                <li><a className="nav-link dropdown-item text-secondary" href="/#">Organización</a></li>
-                                <li><a className="nav-link dropdown-item text-secondary" href="/#">Decoración</a></li>
+                                <li className="nav-link dropdown-item text-secondary" href="/#">
+                                    <Link to="/category/kitchen"> Cocina </Link>
+                                </li>
+                                <li className="nav-link dropdown-item text-secondary" href="/#">
+                                    <Link to="/category/bathroom"> Baño </Link>
+                                </li>
+                                <li className="nav-link dropdown-item text-secondary" href="/#">
+                                    <Link to="/category/orden"> Orden </Link>
+                                </li>
+
                             </ul>
                         </li>
                         <li className="nav-item" style={{ margin: 2 }}>
