@@ -14,6 +14,7 @@ const Item = ({ eachProduct }) => {
             <ItemCount stock={eachProduct.stockProd} initial={1} />
             <Link className="btn btn-warning" to={`/item/${eachProduct.id}`}>Ver detalle</Link>
 
+
         </div>
     )
 }

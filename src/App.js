@@ -14,8 +14,8 @@ function App() {
           <Route exact path="/">
             <ItemListContainer greeting="Unagi Tienda Online" />
           </Route>
-          <Route path="/category/:categoryId">
-            <ItemDetailContainer />
+          <Route exact path="/category/:categoryId">
+            <ItemListContainer />
           </Route>
           <Route path="/item/:paramId">
             <ItemDetailContainer />

@@ -13,17 +13,17 @@ const Nav = () => {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown" style={{ margin: 3 }}>
-                            <a className="nav-link active btn dropdown-toggle text-light" href="/#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="nav-link active btn dropdown-toggle text-light" to="/" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Productos
-          </a>
+                            </Link>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li className="nav-link dropdown-item text-secondary" href="/#">
+                                <li className="nav-link dropdown-item text-secondary">
                                     <Link to="/category/kitchen"> Cocina </Link>
                                 </li>
-                                <li className="nav-link dropdown-item text-secondary" href="/#">
+                                <li className="nav-link dropdown-item text-secondary">
                                     <Link to="/category/bathroom"> Baño </Link>
                                 </li>
-                                <li className="nav-link dropdown-item text-secondary" href="/#">
+                                <li className="nav-link dropdown-item text-secondary">
                                     <Link to="/category/orden"> Orden </Link>
                                 </li>
 

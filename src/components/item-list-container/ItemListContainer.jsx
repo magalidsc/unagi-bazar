@@ -4,7 +4,7 @@ import ItemList from "../items/ItemList"
 import "./style.css";
 import { getProductsAvailable } from "../../products";
 import { useParams } from "react-router-dom";
-
+import { getProductsByCategory } from "../../products"
 
 const ItemListContainer = () => {
 
@@ -16,7 +16,7 @@ const ItemListContainer = () => {
         (async () => {
             // Si la categoría está definada, traer los producto por el id de la categoría, sino traer todos los productos
             if (categoryId !== undefined) {
-                const productsAvailable = await getProductsAvailable(categoryId);
+                const productsAvailable = await getProductsByCategory(categoryId);
                 setProductsAvailable(productsAvailable);
 
             } else {
@@ -29,10 +29,12 @@ const ItemListContainer = () => {
 
     return (
         <div className="container-list container-lg">
+            {productsAvailable.length !== 0 ? <ItemList productsAvailable={productsAvailable} /> : <p> Cargando productos</p>}
 
-            <ItemList productsAvailable={productsAvailable} />
         </div>
     )
 }
+
+
 
 export default ItemListContainer;
