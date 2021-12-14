@@ -51,10 +51,10 @@ En esta carpeta se encuentran los componentes utilizados en la app.
 
 ## Lenguajes y conocimientos utilizados.
 
-⭐️ Html
-⭐️ Css
-⭐️ Bootstrap
-⭐️ Javascript
-⭐️ React Js
-⭐️ Node Js
-⭐️ Github
+⭐️+ Html
+⭐️+ Css
+⭐️+ Bootstrap
+⭐️+ Javascript
+⭐️+ React Js
+⭐️+ Node Js
+⭐️+ Github
