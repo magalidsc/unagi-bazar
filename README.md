@@ -33,7 +33,8 @@ Por otro lado utilizamos la herramienta de Github para subir el proyecto a la we
 
 ## Navegabilidad
 
-![Uploading Unagi-Bazar - 13 December 2021.gif…]()
+![Unagi-Bazar - 13 December 2021](https://user-images.githubusercontent.com/86387370/145910984-0e5cfb0d-590d-4225-81e9-3506aaec1c70.gif)
+
 
 
 ## Base de datos de productos
