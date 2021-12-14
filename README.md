@@ -31,12 +31,16 @@ Es el comando necesario para detener la ejecución del programa y la visualizaci
 Utilizo git para manejar las versiones del proyecto, guardar todos los cambios, y retroceder a versiones anteriores si fuera necesario.
 Por otro lado utilizamos la herramienta de Github para subir el proyecto a la web y poder compartirlo.
 
+## Navegabilidad
+
+![Uploading Unagi-Bazar - 13 December 2021.gif…]()
+
+
 ## Base de datos de productos
 
 ### `products.js`
 
-Al tratarse de una tienda online, se requiere de una base de productor para que el usuario pueda interactuar con la interfaz y simular una compra. Para ello se crea un objeto de productos con distintas propiedades.
-En ese archivo se encuentran adicionalmente, las funciones que se utilizaran para darle funcionamiento y dinamismo a la app. Tales como getProductsAvailable, getProductDetail, getProductsById y getProductsByCategory.
+Al tratarse de una tienda online, se requiere de una base de productos para que el usuario pueda interactuar con la interfaz y simular una compra. Para ello se crea un array con productos y sus distintas propiedades.
 
 ## Componentes
 
@@ -46,12 +50,10 @@ En esta carpeta se encuentran los componentes utilizados en la app.
 
 ## Lenguajes y conocimientos utilizados.
 
-### `Qué lenguajes y herramientas utilice?`
-
-+ Html
-+ Css
-+ Bootstrap
-+ Javascript
-+ React Js
-+ Node Js
-+ Github
+⭐️ Html
+⭐️ Css
+⭐️ Bootstrap
+⭐️ Javascript
+⭐️ React Js
+⭐️ Node Js
+⭐️ Github
