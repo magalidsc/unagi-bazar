@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Unagi-bazar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Creación de una tienda online para el proyecto final del curso React JS de Coder House.
 
-## Available Scripts
+## Como inicié mi proyecto?
 
-In the project directory, you can run:
+En los siguientes puntos encontrás el paso a paso del proyecto
+
+### `create-react-app`
+
+De esta forma, se inicializa el proyecto de React
+
+### `npm install`
+
+Este es el comando con el que instalamos todas las dependencias y recursos utilizados
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este comando es el que se utiliza para ejecutar la aplicación, en el localhost, lo cual nos permite ir viendo los cambios que vamos haciendo a la aplicación en el momento, nos permite saber cuando nos equivocamos.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Cómo detengo la ejecución del programa?
 
-### `npm test`
+### `Ctrl + c`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Es el comando necesario para detener la ejecución del programa y la visualización en el localHost. Es importante saberlo porque cuando necesitamos guardar cambios o alguna acción relacionada al versionado, debemos utilizarlo.
 
-### `npm run build`
+## Cómo manejo el proyecto y dónde lo guardamos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `git y github` 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Utilizo git para manejar las versiones del proyecto, guardar todos los cambios, y retroceder a versiones anteriores si fuera necesario.
+Por otro lado utilizamos la herramienta de Github para subir el proyecto a la web y poder compartirlo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Navegabilidad
 
-### `npm run eject`
+![Unagi-Bazar - 13 December 2021 (2)](https://user-images.githubusercontent.com/86387370/145912953-212247ba-ce4a-4bb9-b18b-aa27cde93c5b.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Base de datos de productos
 
-## Learn More
+### `products.js`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Al tratarse de una tienda online, se requiere de una base de productos para que el usuario pueda interactuar con la interfaz y simular una compra. Para ello se crea un array con productos y sus distintas propiedades.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Componentes
 
-### Code Splitting
+### `src/components`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+En esta carpeta se encuentran los componentes utilizados en la app.
 
-### Analyzing the Bundle Size
+## Lenguajes y conocimientos utilizados.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
++ Html
++ Css
++ Bootstrap
++ Javascript
++ React Js
++ Node Js
++ Github
