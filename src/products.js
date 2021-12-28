@@ -107,37 +107,37 @@ const productsAvailable = [
 ]
 
 
-export const getProductsAvailable = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(productsAvailable)
-        }, 1000)
-    })
-}
+// export const getProductsAvailable = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(productsAvailable)
+//         }, 1000)
+//     })
+// }
 
 
-export const getProductDetail = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(productsAvailable)
-        }, 1000)
-    })
-}
+// export const getProductDetail = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(productsAvailable)
+//         }, 1000)
+//     })
+// }
 
-export const getProductsById = (id) => {
-    return new Promise((resolve, reject) => {
-        const productById = productsAvailable.find(element => parseInt(element.id) === parseInt(id))
-        setTimeout(() => {
-            resolve(productById)
-        }, 1000)
-    })
-}
+// export const getProductsById = (id) => {
+//     return new Promise((resolve, reject) => {
+//         const productById = productsAvailable.find(element => parseInt(element.id) === parseInt(id))
+//         setTimeout(() => {
+//             resolve(productById)
+//         }, 1000)
+//     })
+// }
 
-export const getProductsByCategory = (categoryId) => {
-    return new Promise((resolve, reject) => {
-        const productByCategory = productsAvailable.filter(element => element.category === categoryId)
-        setTimeout(() => {
-            resolve(productByCategory)
-        }, 1000)
-    })
-} 
+// export const getProductsByCategory = (categoryId) => {
+//     return new Promise((resolve, reject) => {
+//         const productByCategory = productsAvailable.filter(element => element.category === categoryId)
+//         setTimeout(() => {
+//             resolve(productByCategory)
+//         }, 1000)
+//     })
+// } 

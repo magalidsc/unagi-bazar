@@ -1,8 +1,9 @@
 import React from 'react';
-import { getProductsById } from '../../products';
 import ItemDetail from "./ItemDetail";
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
+import { db } from '../../services/firebase/firebase'
+import { getDoc, doc, QuerySnapshot } from 'firebase/firestore';
 
 
 const ItemDetailContainer = () => {
@@ -11,9 +12,10 @@ const ItemDetailContainer = () => {
     const { paramId } = useParams();
 
     useEffect(() => {
-        const list = getProductsById(paramId)
-        list.then(list => {
-            setProductsAvailable(list)
+        const list = getDoc(doc(db, 'items', paramId))
+        list.then(QuerySnapshot => {
+            const product = { id: QuerySnapshot.id, ...QuerySnapshot.data() }
+            setProductsAvailable(product)
         })
         return (() => {
             setProductsAvailable()
