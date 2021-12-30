@@ -5,7 +5,7 @@ import ItemListContainer from './components/item-list-container/ItemListContaine
 import ItemDetailContainer from './components/item-detail-container/ItemDetailContainer';
 import Cart from "./components/cart/Cart"
 import { CartProvider } from "./context/CartContext";
-
+import Form from "./components/form/Form.jsx"
 
 function App() {
   return (
@@ -25,6 +25,9 @@ function App() {
             </Route>
             <Route path="/cart">
               <Cart />
+            </Route>
+            <Route path="/form">
+              <Form />
             </Route>
           </Switch>
         </BrowserRouter>
