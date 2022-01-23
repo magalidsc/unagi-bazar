@@ -1,4 +1,5 @@
 .container-list {
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

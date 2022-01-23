@@ -1,0 +1,17 @@
+.containerForm {
+    margin: 30px;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.input {
+    margin-top: 15px;
+}
+
+.btn-form {
+    width: 10%;
+}

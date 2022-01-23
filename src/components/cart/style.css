@@ -1,0 +1,15 @@
+.cartContainer {
+    margin: 35px;
+
+}
+
+.elementContainer {
+    margin-top: 20px;
+    border-bottom: solid 1px;
+    border-color: black;
+   
+}
+
+.cartTitle {
+    margin-top: 30px;
+}

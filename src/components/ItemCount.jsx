@@ -8,7 +8,6 @@ const ItemCount = (props) => {
     const [count, setCounter] = useState(parseInt(props.initial));
 
     const addProduct = () => {
-        // Condicional para que solo se pueda sumar productos hasta llegar al límite del stock
         if (count < props.stock) {
             setCounter(count + 1);
         } else {
@@ -17,7 +16,6 @@ const ItemCount = (props) => {
     }
 
     const removeProduct = () => {
-        // Restar una unidad por cada click. No puede restarse un número menor a 1
         if (count > 0) {
             setCounter(count - 1);
         } else {
@@ -35,7 +33,7 @@ const ItemCount = (props) => {
             <h5> Cantidad seleccionada: {count} </h5>
             <button onClick={removeProduct} className="btn btn-secondary"> - </button>
             <button onClick={addProduct} className="btn btn-secondary"> + </button>
-            {count > 0 ? <button onClick={onAdd} className="btn btn-outline-warning">Agregar al carrito</button> : null}
+            {count > 0 ? <button onClick={onAdd} className="btn btn-success">Agregar al carrito</button> : null}
 
         </div>
     )
