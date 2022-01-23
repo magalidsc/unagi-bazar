@@ -82,7 +82,7 @@ Carpeta que contiene a todos los componentes utilizados para la creación de la 
 ### CartContext 
 Utilizado para exportar estados y funciones que nos serviran para generar las ordenes de compra de nuestros usuarios.
 
-## `. env`
+## Variables de entorno - . env
 Utilización de variables de entorno para hacer referencia a las configuraciones de Firebase. De esta forma, las credenciales e información sensible se mantienen protegidas.
 
 ## Lenguajes y conocimientos utilizados.
