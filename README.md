@@ -22,6 +22,7 @@ Este comando es el que se utiliza para ejecutar la aplicación en el localhost, 
 ## Navegabilidad
 
 
+![Unagi-Bazar - 23 January 2022](https://user-images.githubusercontent.com/86387370/150701100-8bcbf351-7d63-4bbe-b0b5-ca526f62b3d2.gif)
 
 
 
@@ -45,16 +46,16 @@ Cada producto de la tienda online estará cargado en esta colección siguiendo e
 Cada compra finalizada, generará una orden con el siguiente formato:
 
 + buyer:
-clientName: string
-mail: string
+clientName: string,
+mail: string,
 phone: string
 + items:
-id: string (generado automáticamente)
-name: string
-price: number
-category: string
-img: string
-stockProd: number
+id: string (generado automáticamente),
+name: string,
+price: number,
+category: string,
+img: string,
+stockProd: number,
 quantity: number
 
 
